@@ -1,0 +1,16 @@
+﻿  Source.cpp
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\include\shader\shader_s.h(56,40): warning C4101: 'e': unreferenced local variable
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\src\Source.cpp(223,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\src\Source.cpp(291,23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\src\Source.cpp(317,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\src\Source.cpp(318,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\src\Source.cpp(322,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\src\Source.cpp(323,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\src\Source.cpp(324,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mebha\source\repos\LearnOpenGL\LearnOpenGL\src\Source.cpp(325,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  0 of 430 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  LearnOpenGL.vcxproj -> C:\Users\mebha\source\repos\LearnOpenGL\x64\Release\LearnOpenGL.exe

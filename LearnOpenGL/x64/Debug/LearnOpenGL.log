@@ -1,0 +1,11 @@
+﻿  Source.cpp
+D:\3D-LookAround\LearnOpenGL\include\shader\shader_s.h(56,40): warning C4101: 'e': unreferenced local variable
+D:\3D-LookAround\LearnOpenGL\src\Source.cpp(232,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\3D-LookAround\LearnOpenGL\src\Source.cpp(300,23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\3D-LookAround\LearnOpenGL\src\Source.cpp(330,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\3D-LookAround\LearnOpenGL\src\Source.cpp(331,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\3D-LookAround\LearnOpenGL\src\Source.cpp(335,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\3D-LookAround\LearnOpenGL\src\Source.cpp(336,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\3D-LookAround\LearnOpenGL\src\Source.cpp(337,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\3D-LookAround\LearnOpenGL\src\Source.cpp(338,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  LearnOpenGL.vcxproj -> D:\3D-LookAround\x64\Debug\LearnOpenGL.exe

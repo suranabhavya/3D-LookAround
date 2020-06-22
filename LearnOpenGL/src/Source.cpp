@@ -37,6 +37,15 @@ float lastFrame = 0.0f;
 
 int main()
 {
+    std::cout << "Hover your mouse to pitch, yaw and roll!" << std::endl;
+    std::cout << "Press 'W' to move forward" << std::endl;
+    std::cout << "Press 'S' to move backward" << std::endl;
+    std::cout << "Press 'A' to move left" << std::endl;
+    std::cout << "Press 'D' to move right" << std::endl;
+    std::cout << "Press 'Q' to move up" << std::endl;
+    std::cout << "Press 'X' to move down" << std::endl;
+    std::cout << "Press 'Esc' to Quit" << std::endl;
+
     // glfw: initialize and configure
     // ------------------------------
     glfwInit();
@@ -172,10 +181,10 @@ int main()
     // load image, create texture and generate mipmaps
     int width, height, nrChannels;
     stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
-    unsigned char* data = stbi_load("textures/bricks.png", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load("textures/stone.jpg", &width, &height, &nrChannels, 0);
     if (data)
     {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
     else
@@ -257,7 +266,7 @@ int main()
             // calculate the model matrix for each object and pass it to shader before drawing
             glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
             model = glm::translate(model, cubePositions[i]);
-            float angle = 20.0f * i;
+            float angle = 50.0f * i;
             model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
             ourShader.setMat4("model", model);
 
@@ -297,6 +306,10 @@ void processInput(GLFWwindow* window)
         cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+        cameraPos += cameraSpeed * cameraUp;
+    if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS)
+        cameraPos -= cameraSpeed * cameraUp;
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes

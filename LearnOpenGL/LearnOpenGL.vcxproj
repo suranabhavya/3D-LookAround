@@ -578,6 +578,8 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="textures\batman.png" />
+    <Image Include="textures\cement.jpg" />
+    <Image Include="textures\road.jpg" />
     <Image Include="textures\stone.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

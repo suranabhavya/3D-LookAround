@@ -1301,5 +1301,11 @@
     <Image Include="textures\stone.jpg">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="textures\road.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\cement.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
